@@ -1,6 +1,7 @@
 // @ts-check
 
 import { fileURLToPath } from 'node:url';
+import mdx from '@astrojs/mdx';
 import { defineConfig } from 'astro/config';
 import { siteConfig } from './src/config';
 
@@ -23,4 +24,5 @@ export default defineConfig({
       },
     },
   },
+  integrations: [mdx()],
 });
